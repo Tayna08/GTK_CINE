@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/2Filmes.css">
+  <link rel="shortcut icon" href="img/icon.png">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <title>GTK-CINE</title>
+</head>
+
+<body>
+
+  <body>
+    <header class="cabecalho">
+      <h1> CADASTRAR FILME </h1>
+      <p></p>
+    </header>
+    <nav class="topnav">
+      <a href="sugestao.html">Cadastrar Sugestão</a>
+      <a href="cadastrar cliente.html">Cadastrar Cliente</a>
+      <a href="cadastrar patrocinador.html">Cadastrar Patrocinador</a>
+      <a href="série.html">Cadastrar Séries</a>
+    </nav>
+    <form class="campo" id="cadastro-form" action="php/cadastrarFilme.php" method="post">
+      <div class="col-12">
+        <label for="nome" class="form-label">Nome do Filme:</label>
+        <input type="text" name="nome" class="form-control" id="nome" placeholder="Digite o nome do Filme..." required
+          minlength="2" maxlength="150">
+        <span class="mensagem-erro" data-erro></span>
+      </div>
+      <div class="col-12">
+        <label for="sinopse" class="form-label">Sinopse:</label>
+        <input type="text" name="sinopse" class="form-control" id="sinopse" placeholder="Resumo do Filme..." required
+          minlength="30" maxlength="250">
+        <span class="mensagem-erro" data-erro></span>
+      </div>
+      <div class="col-12">
+        <label for="elenco" class="form-label">Elenco</label>
+        <input type="text" name="elenco" class="form-control" id="elenco" placeholder="Ex: Angelina Jolie, Keuane Reeves"
+          required minlength="30" maxlength="250">
+        <span class="mensagem-erro" data-erro></span>
+      </div>
+      <div class="col-md-6">
+        <label for="produtor" class="form-label">Produtor:</label>
+        <input type="text" name="produtor" class="form-control" id="produtor" placeholder="Nome do Produtor:" required
+          minlength="2" maxlength="150">
+        <span class="mensagem-erro" data-erro></span>
+      </div>
+      <div class="col-md-6">
+        <label for="diretor" class="form-label">Diretor:</label>
+        <input type="text" name="diretor" class="form-control" id="diretor" placeholder="Ex: Steven Soderbergh" required
+          minlength="2" maxlength="150">
+        <span class="mensagem-erro" data-erro></span>
+      </div>
+      <div class="col-md-4 position-relative">
+        <label for="validationTooltip01" class="form-label">Data de Lançamento</label>
+        <div clas="input-group has-validation">
+          <input type="date" name="data" class="form-select" id="validationTooltip01"
+            aria-describedby="validationTooltip01Prepend" required>
+          <span class="mensagem-erro" data-erro></span>
+        </div>
+      </div>
+      <div class="col-md-1 position-relative">
+        <label for="validationTooltip01" class="form-label">Duração:</label>
+        <input type="text" class="form-control" id="validationTooltip01" aria-describedby="validationTooltip01Prepend"
+          name="duracao" required>
+        <span class="mensagem-erro" data-erro></span>
+      </div>
+      <div class="col-md-1 position-relative">
+        <label for="validationTooltip01" class="form-label">Classificação indicativa:
+        </label>
+        <input type="text" class="form-control" id="validationTooltip01" aria-describedby="validationTooltip01Prepend"
+          name="classificacao" required>
+        <span class="mensagem-erro" data-erro></span>
+      </div>
+      <div class="col-md-1 position-relative">
+        <label for="validationTooltip01" class="form-label">Gênero:
+        </label>
+        <input type="text" class="form-control" id="validationTooltip01" aria-describedby="validationTooltip01Prepend"
+          name="genero" required>
+        <span class="mensagem-erro" data-erro></span>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit" onsubmit="validaCampo()">Cadastrar</button>
+      </div>
+    </form>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/filme.js"></script>
+  </body>
+</body>
+
+</html>

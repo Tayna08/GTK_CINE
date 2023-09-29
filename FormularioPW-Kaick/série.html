@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilo1.css">
+  <link rel="shortcut icon" href="img/icon.png">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <title>GTK-CINE</title>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <h1> CADASTRAR SÉRIES </h1>
+    <p></p>
+  </header>
+  <nav class="topnav">
+    <a href="cadastrar cliente.html">Cadastrar Cliente</a>
+    <a href="cadastrar patrocinador.html">Cadastrar Patrocinador</a>
+    <a href="série.html">Cadastrar Colaborador</a>
+    <a href="sugestao.html">Cadastrar Sugestão</a>
+  </nav>
+  <form class="campo" id="cadastro-form" action="php/cadastrarSerie.php" method="post">
+    <div class="col-12">
+      <label for="nome" class="form-label">Nome:</label>
+      <input type="text" name="nome" class="form-control" id="nome" placeholder="Ex: Origem" required>
+      <span class="mensagem-erro" data-erro></span>
+    </div>
+    <div class="col-12">
+      <label for="sinopse" class="form-label">Sinopse:</label>
+      <input type="text" name="sinopse" class="form-control" id="sinopse" placeholder="Resumo da Série" required
+        minlength="30" maxlength="250">
+      <span class="mensagem-erro" data-erro></span>
+    </div>
+    <div class="col-12">
+      <label for="elenco" class="form-label">Elenco:</label>
+      <input type="text" name="elenco" class="form-control" id="elenco" placeholder="Ex: Angelina Jolie, Keuane Reeves"
+        required minlength="30" maxlength="300">
+      <span class="mensagem-erro" data-erro></span>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <label for="produtora" class="form-label">Produtora:</label>
+        <input type="text" name="produtora" class="form-control" id="produtora" placeholder="Ex: DreamWorks" required
+          minlength="2" maxlength="150">
+        <span class="mensagem-erro" data-erro></span>
+      </div>
+      <div class="col-md-6">
+        <label for="diretor" class="form-label">Diretor:</label>
+        <input type="text" name="diretor" class="form-control" id="diretor" placeholder="Ex: Steven Soderbergh" required
+          minlength="2" maxlength="150">
+        <span class="mensagem-erro" data-erro></span>
+      </div>
+      <div class="col-md-6">
+        <label for="diretor" class="form-label">Classificação indicativa:</label>
+        <input type="text" name="classificacao" class="form-control" id="classificacao" placeholder="Ex: Livre / 12 " required
+          minlength="2" maxlength="150">
+        <span class="mensagem-erro" data-erro></span>
+      </div>
+      <div class="col-md-6">
+        <label for="diretor" class="form-label">Gênero:</label>
+        <input type="text" name="genero" class="form-control" id="genero" placeholder=" Ação " required
+          minlength="2" maxlength="150">
+        <span class="mensagem-erro" data-erro></span>
+      </div>
+      
+    </div>
+    <div class="col-md-4 position-relative">
+      <label for="validationTooltip01" class="form-label">Data de Lançamento</label>
+      <div clas="input-group has-validation">
+        <input type="date" name="data" class="form-select" id="validationTooltip01"
+          aria-describedby="validationTooltip01Prepend" required>
+        <span class="mensagem-erro" data-erro></span>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit" onsubmit="validaCampo()">Cadastrar</button>
+    </div>
+  </form>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

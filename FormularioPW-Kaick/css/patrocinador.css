@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    background-image: url("../img/fundo1.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: "Open sans", sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 15px;
+    border-bottom: solid 1px;
+    border-radius: 15px;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin: 0;
+    padding: 15;
+}
+
+form div button {
+    box-sizing: border-box;
+    display:block;
+    width: 10%;
+    border: none;
+    border-bottom: solid 1px;
+    margin: 0;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to right, rgb(99, 68, 11), rgb(197, 159, 32));
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 700;
+    height: 50px;
+    padding: 15;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form button:hover {
+    background: var(--primary-color-darker);
+}
+
+.error-text {
+    font-size: 12px;
+    color: red;
+}
+
+.cabecalho {
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.87);
+    color: rgb(216, 3, 3);
+}
+
+.cabecalho h1 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgba(5, 0, 0, 0.726);
+    text-align: center;
+}
+
+.topnav a {
+    display: inline-block;
+    color: beige;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.topnav a:hover {
+    background-color: rgba(0, 0, 0, 0.384);
+    color: rgb(235, 8, 8);
+    border-bottom: solid 1px;
+    border-radius: 15px;
+}
+
+.galery-container {
+    background-color: rgba(0, 0, 0, 0.795);
+    width: 100%;
+    padding: 50px 0;
+}
+
+
+
+option{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.808);
+    color: red;
+}
+
+.mensagem-erro{
+    color: red;
+}

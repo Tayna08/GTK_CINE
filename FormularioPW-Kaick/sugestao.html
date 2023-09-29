@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/sugestao.css">
+  <link rel="shortcut icon" href="img/icon.png">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <title>GTK-CINE</title>
+</head>
+
+<body>
+
+  <body>
+    <header class="cabecalho">
+      <h1> CADASTRAR SUGESTÃO </h1>
+      <p></p>
+    </header>
+    <nav class="topnav">
+    <a href="filme.html">Cadastrar Filme</a>
+    <a href="cadastrar cliente.html">Cadastrar Cliente</a>
+    <a href="cadastrar patrocinador.html">Cadastrar Patrocinador</a>
+    <a href="série.html">Cadastrar Séries</a>
+    </nav>
+    <form class="campo" id="cadastro-form" action="php/cadastrarSugestao.php" method="post">
+      <div class="col-12">
+        <label for="nome" class="form-label">Qual o seu filme favorito?</label>
+        <input type="text" name="filme" class="form-control" id="filme" required
+          minlength="2" maxlength="250">
+        <span class="mensagem-erro" data-erro></span>
+      </div>
+      <div class="col-12">
+        <label for="diretor" class="form-label">Diretor ou diretora favorito(a)</label>
+        <input type="text" name="diretor" class="form-control" id="diretor" required
+          minlength="2" maxlength="150">
+        <span class="mensagem-erro" data-erro></span>
+      </div>
+      <div class="col-md-6">
+        <label for="produtor" class="form-label">Melhor cinematografia em um filme</label>
+        <input type="text" name="cine" class="form-control" id="cine" required
+          minlength="2" maxlength="500">
+        <span class="mensagem-erro" data-erro></span>
+      </div>
+      <div class="col-md-6">
+        <label for="diretor" class="form-label">Personagem cinematográfico mais memorável</label>
+        <input type="text" name="personagem" class="form-control" id="personagem"
+          required minlength="2" maxlength="200">
+        <span class="mensagem-erro" data-erro></span>
+      </div>
+      <div class="col-md-6">
+        <label for="diretor" class="form-label">Ator ou atriz favorito(a).</label>
+        <input type="text" name="ator" class="form-control" id="ator" 
+          required minlength="2" maxlength="150">
+        <span class="mensagem-erro" data-erro></span>
+      </div>
+      <div class="col-md-2 position-relative">
+        <label for="validationTooltip01" class="form-label">Qual a duração de filme que você prefere? Duas horas?? Três horas???</label>
+        <input type="text" name="tempo" class="form-control" id="tempo" 
+        required minlength="2" maxlength="150">
+        <span class="mensagem-erro" data-erro></span>
+      </div>
+      <div class="col-md-6">
+        <label for="diretor" class="form-label">Qual o seu gênero favorito?</label>
+        <input type="text" name="genero" class="form-control" id="genero" placeholder=" Ação " required
+          minlength="2" maxlength="150">
+        <span class="mensagem-erro" data-erro></span>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit" onsubmit="validaCampo()">Cadastrar</button>
+      </div>
+    </form>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/sugestao.js"></script>
+  </body>
+</body>
+
+</html>
